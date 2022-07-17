@@ -1237,9 +1237,9 @@ class Ui_IHM(object):
         self.ea_Posicao.setText(_translate("IHM", "Posição (cm):"))
         self.ea_Vel.setText(_translate("IHM", "Velocidade (cm/s):"))
         self.ea_Torque.setText(_translate("IHM", "Torque (N.cm):"))
-        self.PosicaoAtual.setText(_translate("IHM", "55,5"))
-        self.PosicaoAtual_2.setText(_translate("IHM", "55,5"))
-        self.PosicaoAtual_3.setText(_translate("IHM", "55,5"))
+        self.PosicaoAtual.setText(_translate("IHM", "0,00"))
+        self.PosicaoAtual_2.setText(_translate("IHM", "0,00"))
+        self.PosicaoAtual_3.setText(_translate("IHM", "0,00"))
 
 
 if __name__ == "__main__":
