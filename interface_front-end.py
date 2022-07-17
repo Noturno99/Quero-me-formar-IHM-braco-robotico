@@ -378,7 +378,7 @@ class Ui_IHM(object):
         self.Background.setGeometry(QtCore.QRect(0, 0, 1009, 741))
         self.Background.setAutoFillBackground(True)
         self.Background.setText("")
-        self.Background.setPixmap(QtGui.QPixmap("../../../Downloads/wp7440058-black-patterns-wallpapers.jpg"))
+        self.Background.setPixmap(QtGui.QPixmap("black-patterns-background.jpg"))
         self.Background.setScaledContents(True)
         self.Background.setObjectName("Background")
         self.Entrada = QtWidgets.QGroupBox(self.centralwidget)
