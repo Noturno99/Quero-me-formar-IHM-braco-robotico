@@ -56,8 +56,6 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
         self.output1 = self.findChild(QtWidgets.QLabel, 'label_Posicao')
         self.output2 = self.findChild(QtWidgets.QLabel, 'label_Vel')
         self.output3 = self.findChild(QtWidgets.QLabel, 'label_Torque')
-
-        self.show()
-'''bash
+'''
 
 ### Comunicação do Host com a Toradex
