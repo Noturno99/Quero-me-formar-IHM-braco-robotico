@@ -18,12 +18,15 @@ Dito isso, podemos dividir o projeto em três etapas: Front-End, Back-End e Comu
 ## Desenvolvimento
 
 ### Front-End
-Essa etapa envolve a criação de uma interface por meio da qual o usuário digitará dados de comunicação e de controle dos motores, para que sejam enviados ao microcontrolador. Ademais, o estado atual do braço robótico deve ser exibido na janela. Sendo assim, dividiu-se a interface em três seções - Conexão, Entrada e Estado Atual -, conforme a imagem abaixo mostra.
+Essa etapa envolve a criação de uma interface por meio da qual o usuário digitará dados de comunicação e de controle dos motores do braço robótico, para que sejam enviados ao microcontrolador. Ademais, o estado atual do robô deve ser exibido na janela. Sendo assim, dividiu-se a interface em três seções - Conexão, Entrada e Estado Atual -, conforme a imagem abaixo mostra.
 
 ![image](https://user-images.githubusercontent.com/70723135/179436185-bd050a5f-a298-4779-9335-bf4dbbe70f47.png)
 
+No que diz respeito às ferramentas para o desenvolvimento da interface, utilizou-se o Qt Designer, um software que facilita a utilização do framework Qt. O arquivo resultante, que corresponde ao Front-End, possui a extensão .ui.
 
 ### Back-End
+Feito o Front-End, é necessário implementar recepção, interpretação e envio de dados fornecidos pelo usuário, isto é, executar as ações necessárias quando são digitados os valores desejados nos campos em branco e os botões são pressionados.
 
+Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, no entanto a versão para linguagem Python, a PyQt. O arquivo .py presente no diretório IHM realiza a leitura do arquivo .ui da etapa anterior e promove a interação do usuário com os componentes da interface.
 
 ### Comunicação do Host com a Toradex
