@@ -514,7 +514,6 @@ QGroupBox {
 	background-color:transparent;
 	border-radius: 15px;
 	border:2px solid gray;
-	palette: white
 }
 
 </string>
@@ -1523,7 +1522,6 @@ QGroupBox {
 	background-color:transparent;
 	border-radius: 15px;
 	border:2px solid gray;
-	palette: white
 }
 
 </string>
@@ -2510,7 +2508,6 @@ QGroupBox {
 	background-color:transparent;
 	border-radius: 15px;
 	border:2px solid gray;
-	palette: white
 }
 
 </string>
