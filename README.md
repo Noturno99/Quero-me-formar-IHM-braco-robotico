@@ -11,6 +11,9 @@ Membros:
 - Pedro Antonio Calorio Gutierres - nº 10746856
 
 ## Objetivo
+O intuito desse projeto é desenvolver uma interface capaz de enviar sinais de posição, torque e velocidade para um microcontrolador Toradex que, por sua vez, estará controlando os motores de um braço robótico de reabilitação. A ideia é a interface e a recepção e envio de dados de entrada rodarem em um computador (host) com sistema operacional Linux.
+
+Dito isso, podemos dividir o projeto em três etapas: Front-End, Back-End e Comunicação Host-Toradex.
 
 ## Desenvolvimento
 
