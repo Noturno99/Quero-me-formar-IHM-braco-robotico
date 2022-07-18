@@ -65,7 +65,7 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 Por fim, para estabelecer a comunicação entre o host e a Toradex, utilizou-se protocolo TCP-IP e Sockets nos quais o client foi implementado em Python no computador e o server, em C++ no microcontrolador. Algumas linhas de código responsáveis pela funcionalidade do server são apresentadas a seguir:
 
 ```bash
-    //Criação do socket server
+    // Criação do socket server
     sockaddr_in servAddr;
     bzero((char*)&servAddr, sizeof(servAddr));
     servAddr.sin_family = AF_INET;
