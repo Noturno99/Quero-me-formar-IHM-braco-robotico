@@ -11,20 +11,17 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-   
-    //grab the port number
     int port = 5560;
-    //buffer to send and receive messages with
+    //Buffer para receber e enviar mensagens
     char msg[1500];
      
-    //setup a socket and connection tools
+    //Criação do socket server
     sockaddr_in servAddr;
     bzero((char*)&servAddr, sizeof(servAddr));
     servAddr.sin_family = AF_INET;
     servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
     servAddr.sin_port = htons(port);
  
-
     int serverSd = socket(AF_INET, SOCK_STREAM, 0);
     if(serverSd < 0)
     {
@@ -37,54 +34,34 @@ int main(int argc, char *argv[])
 
     printf("\n Esperando o client para conectar. \n");
     listen(serverSd, 5);
-    //receive a request from client using accept
-    //we need a new address to connect with the client
+
     sockaddr_in newSockAddr;
     socklen_t newSockAddrSize = sizeof(newSockAddr);
-    //accept, create a new socket descriptor to 
-    //handle the new connection with client
+
     int newSd = accept(serverSd, (sockaddr *)&newSockAddr, &newSockAddrSize);
-    if(newSd < 0)
-    {
-        printf("\n Error accepting request from client! \n" );
-        exit(1);
-    }
-    printf( "\n Connected with client! \n");
+    
+    printf( "\n Conexão estabelecida com o client! \n");
    
-    //also keep track of the amount of data sent as well
-    int bytesRead, bytesWritten = 0;
+    int bytesLeitura, bytesEscrita = 0;
+
+    // Loop para receber mensagens do client
     while(1)
     {
-        //receive a message from the client (listen)
-        printf("\n Awaiting client response... \n");
-        memset(&msg, 0, sizeof(msg));//clear the buffer
-        bytesRead += recv(newSd, (char*)&msg, sizeof(msg), 0);
+        printf("\n Esperando mensagem do client... \n");
+        memset(&msg, 0, sizeof(msg));
+        bytesLeitura += recv(newSd, (char*)&msg, sizeof(msg), 0);
         if(!strcmp(msg, "exit"))
         {
-            printf("\n Client has quit the session \n" );
+            printf("\n Client saiu da sessão...\n" );
             break;
         }
-        printf("\n Position/velocity/torque: %s \n", msg);
-        //cout << ">";
-        //string data;
-        //getline(cin, data);
-        //memset(&msg, 0, sizeof(msg)); //clear the buffer
-        //strcpy(msg, data.c_str());
-        //if(data == "exit")
-        //{
-            //send to the client that server has closed the connection
-           // send(newSd, (char*)&msg, strlen(msg), 0);
-           // break;
-       // }
-        //send the message to client
-        bytesWritten += send(newSd, (char*)&msg, strlen(msg), 0);
+        printf("\n Posição, velocidade, torque: %s \n", msg);
+        bytesEscrita += send(newSd, (char*)&msg, strlen(msg), 0);
     }
-    //we need to close the socket descriptors after we're all done
+
+    // Fechar sockets
     close(newSd);
     close(serverSd);
-    printf( "\n ********Session******** \n" );
-    printf("\n Bytes written: %d \n " ,bytesWritten);
-    printf ("\n Bytes read: %d \n", bytesRead );
-    printf("\n Connection closed... \n");
+    printf("\n Conexão interrompida... \n");
     return 0;   
 }
