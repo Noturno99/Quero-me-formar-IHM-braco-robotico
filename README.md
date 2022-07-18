@@ -25,8 +25,39 @@ Essa etapa envolve a criação de uma interface por meio da qual o usuário digi
 No que diz respeito às ferramentas para o desenvolvimento da interface, utilizou-se o Qt Designer, um software que facilita a utilização do framework Qt. O arquivo resultante, que corresponde ao Front-End, possui a extensão .ui.
 
 ### Back-End
-Feito o Front-End, é necessário implementar recepção, interpretação e envio de dados fornecidos pelo usuário, isto é, executar as ações necessárias quando são digitados os valores desejados nos campos em branco e os botões são pressionados.
+Feito o Front-End, é necessário implementar recepção, interpretação e envio dos dados fornecidos pelo usuário, isto é, executar as ações necessárias quando são digitados os valores desejados nos campos em branco e os botões são pressionados.
 
-Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, no entanto a versão para linguagem Python, a PyQt. O arquivo .py presente no diretório IHM realiza a leitura do arquivo .ui da etapa anterior e promove a interação do usuário com os componentes da interface.
+Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, no entanto a versão para linguagem Python, a PyQt. O arquivo .py presente no diretório IHM realiza a leitura do arquivo .ui da etapa anterior e promove a interação do usuário com os componentes da interface. Abaixo está um snippet que exemplifica como isso é feito:
+
+'''bash
+# ---------------- Back-End ----------------- #
+
+        # Inputs - seção "Conexão"
+        self.input1 = self.findChild(QtWidgets.QLineEdit, 'line_IP')
+        self.input2 = self.findChild(QtWidgets.QLineEdit, 'line_Entrada')
+        self.input3 = self.findChild(QtWidgets.QLineEdit, 'line_Envio')
+
+        # Botão Conectar
+        self.botao1 = self.findChild(QtWidgets.QPushButton, 'botao_Conectar') 
+        self.botao1.clicked.connect(self.botaoConectarPressionado)
+        
+
+        # Inputs - seção "Entrada"
+        self.input4 = self.findChild(QtWidgets.QLineEdit, 'line_Posicao')
+        self.input5 = self.findChild(QtWidgets.QLineEdit, 'line_Vel')
+        self.input6 = self.findChild(QtWidgets.QLineEdit, 'line_Torque')
+
+        # Botão Enviar
+        self.botao2 = self.findChild(QtWidgets.QPushButton, 'botao_Enviar')
+        self.botao2.clicked.connect(self.botaoEnviarPressionado)
+
+
+        # Outputs - seção "Estado Atual"
+        self.output1 = self.findChild(QtWidgets.QLabel, 'label_Posicao')
+        self.output2 = self.findChild(QtWidgets.QLabel, 'label_Vel')
+        self.output3 = self.findChild(QtWidgets.QLabel, 'label_Torque')
+
+        self.show()
+'''bash
 
 ### Comunicação do Host com a Toradex
