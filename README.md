@@ -29,8 +29,8 @@ Feito o Front-End, é necessário implementar recepção, interpretação e envi
 
 Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, no entanto a versão para linguagem Python, a PyQt. O arquivo .py presente no diretório IHM realiza a leitura do arquivo .ui da etapa anterior e promove a interação do usuário com os componentes da interface. Abaixo está um snippet que exemplifica como isso é feito:
 
-'''bash
-# ---------------- Back-End ----------------- #
+```bash
+        # ---------------- Back-End ----------------- #
 
         # Inputs - seção "Conexão"
         self.input1 = self.findChild(QtWidgets.QLineEdit, 'line_IP')
@@ -56,6 +56,6 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
         self.output1 = self.findChild(QtWidgets.QLabel, 'label_Posicao')
         self.output2 = self.findChild(QtWidgets.QLabel, 'label_Vel')
         self.output3 = self.findChild(QtWidgets.QLabel, 'label_Torque')
-'''
+```
 
 ### Comunicação do Host com a Toradex
