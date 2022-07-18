@@ -29,7 +29,7 @@ Feito o Front-End, é necessário implementar recepção, interpretação e envi
 
 Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, no entanto a versão para linguagem Python, a PyQt. O arquivo .py presente no diretório IHM realiza a leitura do arquivo .ui da etapa anterior e promove a interação do usuário com os componentes da interface. Abaixo está uma parte do código que exemplifica como isso é feito:
 
-```bash
+```python
         # ---------------- Back-End ----------------- #
         
         # As funções botaoConectarPressionado e botaoEnviarPressionado determinam
@@ -64,7 +64,7 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 ### Comunicação do Host com a Toradex
 Por fim, para estabelecer a comunicação entre o host e a Toradex, utilizou-se protocolo TCP-IP e Sockets nos quais o client foi implementado em Python no computador e o server, em C++ no microcontrolador. Algumas linhas de código responsáveis pela funcionalidade do server são apresentadas a seguir:
 
-```bash
+```cpp
     // Criação do socket server
     sockaddr_in servAddr;
     bzero((char*)&servAddr, sizeof(servAddr));
