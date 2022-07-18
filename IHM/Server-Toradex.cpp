@@ -12,10 +12,10 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     int port = 5560;
-    //Buffer para receber e enviar mensagens
+    // Buffer para receber e enviar mensagens
     char msg[1500];
      
-    //Criação do socket server
+    // Criação do socket server
     sockaddr_in servAddr;
     bzero((char*)&servAddr, sizeof(servAddr));
     servAddr.sin_family = AF_INET;
