@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1009</width>
+    <width>1069</width>
     <height>740</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
    <widget class="QGroupBox" name="Conexao">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>140</x>
       <y>80</y>
       <width>311</width>
       <height>261</height>
@@ -514,7 +514,7 @@ QGroupBox {
 	background-color:transparent;
 	border-radius: 15px;
 	border:2px solid gray;
-	palette:rgb(255, 255, 255)
+	palette: white
 }
 
 </string>
@@ -759,7 +759,7 @@ QGroupBox {
     <widget class="QLabel" name="c_IP">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>30</x>
        <y>50</y>
        <width>101</width>
        <height>31</height>
@@ -820,7 +820,7 @@ border: transparent;
     <widget class="QLabel" name="c_Envio">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>30</x>
        <y>110</y>
        <width>101</width>
        <height>31</height>
@@ -884,7 +884,7 @@ border: transparent;
     <widget class="QLabel" name="c_Entrada">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>30</x>
        <y>170</y>
        <width>101</width>
        <height>31</height>
@@ -958,7 +958,7 @@ border: transparent;
     <widget class="QLineEdit" name="line_Envio">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>110</y>
        <width>141</width>
        <height>31</height>
@@ -977,7 +977,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_IP">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>50</y>
        <width>141</width>
        <height>31</height>
@@ -996,7 +996,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_Entrada">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>170</y>
        <width>141</width>
        <height>31</height>
@@ -1018,7 +1018,7 @@ selection-background-color: white;
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1009</width>
+      <width>1071</width>
       <height>741</height>
      </rect>
     </property>
@@ -1038,7 +1038,7 @@ selection-background-color: white;
    <widget class="QGroupBox" name="Entrada">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>600</x>
       <y>80</y>
       <width>311</width>
       <height>261</height>
@@ -1523,7 +1523,7 @@ QGroupBox {
 	background-color:transparent;
 	border-radius: 15px;
 	border:2px solid gray;
-	palette:rgb(255, 255, 255)
+	palette: white
 }
 
 </string>
@@ -1768,7 +1768,7 @@ QGroupBox {
     <widget class="QLabel" name="e_Posicao">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>50</y>
        <width>111</width>
        <height>31</height>
@@ -1829,7 +1829,7 @@ border: transparent;
     <widget class="QLabel" name="e_Vel">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>110</y>
        <width>111</width>
        <height>31</height>
@@ -1893,7 +1893,7 @@ border: transparent;
     <widget class="QLabel" name="e_Torque">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>170</y>
        <width>111</width>
        <height>31</height>
@@ -1967,7 +1967,7 @@ border: transparent;
     <widget class="QLineEdit" name="line_Posicao">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>50</y>
        <width>141</width>
        <height>31</height>
@@ -1986,7 +1986,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_Vel">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>110</y>
        <width>141</width>
        <height>31</height>
@@ -2005,7 +2005,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_Torque">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>170</y>
        <width>141</width>
        <height>31</height>
@@ -2025,7 +2025,7 @@ selection-background-color: white;
    <widget class="QGroupBox" name="EstadoAtual">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>600</x>
       <y>410</y>
       <width>311</width>
       <height>221</height>
@@ -2510,7 +2510,7 @@ QGroupBox {
 	background-color:transparent;
 	border-radius: 15px;
 	border:2px solid gray;
-	palette:rgb(255, 255, 255)
+	palette: white
 }
 
 </string>
@@ -3371,7 +3371,7 @@ selection-background-color: white;
    <widget class="QLabel" name="LogoEESC">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>200</x>
       <y>410</y>
       <width>191</width>
       <height>221</height>
