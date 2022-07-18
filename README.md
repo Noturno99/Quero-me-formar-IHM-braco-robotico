@@ -27,11 +27,14 @@ No que diz respeito às ferramentas para o desenvolvimento da interface, utilizo
 ### Back-End
 Feito o Front-End, é necessário implementar recepção, interpretação e envio dos dados fornecidos pelo usuário, isto é, executar as ações necessárias quando são digitados os valores desejados nos campos em branco e os botões são pressionados.
 
-Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, no entanto a versão para linguagem Python, a PyQt. O arquivo .py presente no diretório IHM realiza a leitura do arquivo .ui da etapa anterior e promove a interação do usuário com os componentes da interface. Abaixo está um snippet que exemplifica como isso é feito:
+Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, no entanto a versão para linguagem Python, a PyQt. O arquivo .py presente no diretório IHM realiza a leitura do arquivo .ui da etapa anterior e promove a interação do usuário com os componentes da interface. Abaixo está uma parte do código que exemplifica como isso é feito:
 
 ```bash
         # ---------------- Back-End ----------------- #
-
+        
+        # As funções botaoConectarPressionado e botaoEnviarPressionado determinam
+        # quais ações serão tomados quando cada botão for apertado.
+        
         # Inputs - seção "Conexão"
         self.input1 = self.findChild(QtWidgets.QLineEdit, 'line_IP')
         self.input2 = self.findChild(QtWidgets.QLineEdit, 'line_Entrada')
