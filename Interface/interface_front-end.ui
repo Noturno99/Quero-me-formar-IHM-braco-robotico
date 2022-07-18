@@ -3075,7 +3075,7 @@ selection-background-color: white;
 }</string>
      </property>
      <property name="text">
-      <string>55,5</string>
+      <string>0,00</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3218,7 +3218,7 @@ selection-background-color: white;
 }</string>
      </property>
      <property name="text">
-      <string>55,5</string>
+      <string>0,00</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3361,7 +3361,7 @@ selection-background-color: white;
 }</string>
      </property>
      <property name="text">
-      <string>55,5</string>
+      <string>0,00</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
