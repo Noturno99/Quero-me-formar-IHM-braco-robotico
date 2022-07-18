@@ -18,7 +18,7 @@ Dito isso, podemos dividir o projeto em três etapas: Front-End, Back-End e Comu
 ## Desenvolvimento
 
 ### Front-End
-Essa etapa envolve a criação de uma interface por meio da qual o usuário digitará dados de comunicação e de controle dos motores, para que sejam enviados ao microcontrolador. Ademais, o estado atual do braço robótico deve ser exibido na janela. Sendo assim, dividiu-se a interface em três seções (Conexão, Entrada e Estado Atual), conforme a imagem abaixo mostra.
+Essa etapa envolve a criação de uma interface por meio da qual o usuário digitará dados de comunicação e de controle dos motores, para que sejam enviados ao microcontrolador. Ademais, o estado atual do braço robótico deve ser exibido na janela. Sendo assim, dividiu-se a interface em três seções - Conexão, Entrada e Estado Atual -, conforme a imagem abaixo mostra.
 
 ![image](https://user-images.githubusercontent.com/70723135/179436185-bd050a5f-a298-4779-9335-bf4dbbe70f47.png)
 
