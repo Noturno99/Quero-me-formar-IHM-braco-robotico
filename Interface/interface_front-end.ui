@@ -758,9 +758,9 @@ QGroupBox {
     <widget class="QLabel" name="c_IP">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>50</y>
-       <width>101</width>
+       <width>121</width>
        <height>31</height>
       </rect>
      </property>
@@ -819,9 +819,9 @@ border: transparent;
     <widget class="QLabel" name="c_Envio">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>110</y>
-       <width>101</width>
+       <width>121</width>
        <height>31</height>
       </rect>
      </property>
@@ -883,9 +883,9 @@ border: transparent;
     <widget class="QLabel" name="c_Entrada">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>170</y>
-       <width>101</width>
+       <width>121</width>
        <height>31</height>
       </rect>
      </property>
@@ -957,7 +957,7 @@ border: transparent;
     <widget class="QLineEdit" name="line_Envio">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>110</y>
        <width>141</width>
        <height>31</height>
@@ -976,7 +976,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_IP">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>50</y>
        <width>141</width>
        <height>31</height>
@@ -995,7 +995,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_Entrada">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>170</y>
        <width>141</width>
        <height>31</height>
@@ -1766,9 +1766,9 @@ QGroupBox {
     <widget class="QLabel" name="e_Posicao">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>50</y>
-       <width>111</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -1827,9 +1827,9 @@ border: transparent;
     <widget class="QLabel" name="e_Vel">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>110</y>
-       <width>111</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -1891,9 +1891,9 @@ border: transparent;
     <widget class="QLabel" name="e_Torque">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>170</y>
-       <width>111</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -1965,7 +1965,7 @@ border: transparent;
     <widget class="QLineEdit" name="line_Posicao">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>50</y>
        <width>141</width>
        <height>31</height>
@@ -1984,7 +1984,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_Vel">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>110</y>
        <width>141</width>
        <height>31</height>
@@ -2003,7 +2003,7 @@ selection-background-color: white;
     <widget class="QLineEdit" name="line_Torque">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>170</y>
        <width>141</width>
        <height>31</height>
@@ -2754,7 +2754,7 @@ QGroupBox {
       <rect>
        <x>40</x>
        <y>50</y>
-       <width>111</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -2815,7 +2815,7 @@ border: transparent;
       <rect>
        <x>40</x>
        <y>110</y>
-       <width>111</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -2879,7 +2879,7 @@ border: transparent;
       <rect>
        <x>40</x>
        <y>170</y>
-       <width>111</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -2938,7 +2938,7 @@ border: transparent;
     <widget class="QLabel" name="label_Posicao">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>180</x>
        <y>50</y>
        <width>71</width>
        <height>31</height>
@@ -3072,7 +3072,7 @@ selection-background-color: white;
 }</string>
      </property>
      <property name="text">
-      <string>0,00</string>
+      <string>0.00</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3081,7 +3081,7 @@ selection-background-color: white;
     <widget class="QLabel" name="label_Vel">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>180</x>
        <y>110</y>
        <width>71</width>
        <height>31</height>
@@ -3215,7 +3215,7 @@ selection-background-color: white;
 }</string>
      </property>
      <property name="text">
-      <string>0,00</string>
+      <string>0.00</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -3224,7 +3224,7 @@ selection-background-color: white;
     <widget class="QLabel" name="label_Torque">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>180</x>
        <y>170</y>
        <width>71</width>
        <height>31</height>
@@ -3358,7 +3358,7 @@ selection-background-color: white;
 }</string>
      </property>
      <property name="text">
-      <string>0,00</string>
+      <string>0.00</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
