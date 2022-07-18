@@ -62,3 +62,13 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 ```
 
 ### Comunicação do Host com a Toradex
+Por fim, para estabelecer a comunicação entre o host e a Toradex, utilizou-se Sockets nos quais o client foi implementado em Python no computador e o server, em C++ no microcontrolador. As linhas de código responsáveis por essa funcionalidade são:
+
+```bash
+        
+```
+```bash
+        
+```
+
+Vale ressaltar que os comandos para execução do client estão presentes no mesmo arquivo .py do Back-End.
