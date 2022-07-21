@@ -1,7 +1,6 @@
 from PyQt5 import QtWidgets, uic
 import sys
 import socket  
-import numpy as np
 from asyncio import open_connection
 from codecs import charmap_build
 
