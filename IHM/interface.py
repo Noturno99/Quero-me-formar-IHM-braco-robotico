@@ -6,10 +6,7 @@ from asyncio import open_connection
 from codecs import charmap_build
 
 # Instância de Socket
-s = socket.socket()  
-
-message =np.uint8([1,2,3])
-
+sc = socket.socket()  
 
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
@@ -21,6 +18,9 @@ class Ui(QtWidgets.QMainWindow):
 
 
         # ---------------- Back-End ----------------- #
+
+        # As funções botaoConectarPressionado e botaoEnviarPressionado determinam
+        # quais ações serão tomados quando cada botão for apertado.
 
         # Inputs - seção "Conexão"
         self.input1 = self.findChild(QtWidgets.QLineEdit, 'line_IP')
@@ -51,14 +51,13 @@ class Ui(QtWidgets.QMainWindow):
 
 
     def botaoConectarPressionado(self):
-        ip_text = self.input1.text()
-        print('IP:', ip_text)
-        port_send= int(self.input2.text())
-        print('Porta de envio:', port_send)
-        port_receive= int(self.input3.text())
-        print('Porta de entrada:', port_receive)
-        port = port_send   
-        s.connect((ip_text, port))
+        ip = self.input1.text()
+        print('IP:', ip)
+        send= int(self.input2.text())
+        print('Porta de envio:', send)
+        receive= int(self.input3.text())
+        print('Porta de entrada:', receive)  
+        sc.connect((ip, send))
 
 
     def botaoEnviarPressionado(self):
@@ -69,20 +68,20 @@ class Ui(QtWidgets.QMainWindow):
         torque = float(self.input6.text())
         print('Torque:', torque)
  
-        posicao_send = str(posicao)
-        vel_send = str(vel)
-        torque_send= str(torque)
+        p_enviado = str(posicao)
+        v_enviado = str(vel)
+        t_enviado= str(torque)
 
-        string = "{} {} {}".format(posicao_send, vel_send, torque_send)
-        s.send(string.encode())
+        string = "{} {} {}".format(p_enviado, v_enviado, t_enviado)
+        sc.send(string.encode())
 
         # Exibição do Estado Atual
-        msg = s.recv(1024)
-        received_msg = msg.decode()
-        split_msg= received_msg.split(" ", 2)
+        msg = sc.recv(1024)
+        msg_recebida = msg.decode()
+        split_msg= msg_recebida.split(" ", 2)
         self.output1.setText(split_msg[0])
-        self.output1.setText(split_msg[1])
-        self.output1.setText(split_msg[2])
+        self.output2.setText(split_msg[1])
+        self.output3.setText(split_msg[2])
    
    
 app = QtWidgets.QApplication(sys.argv)
