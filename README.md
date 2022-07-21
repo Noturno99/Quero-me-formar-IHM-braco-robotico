@@ -1,7 +1,7 @@
 # Quero-me-formar-IHM-braco-robotico
 Trabalho final da disciplina de Sistemas Embarcados (SEM0544) - 2022.1.
 
-Projeto 5: Interface Homem-Máquina para braço robótico de reabilitação.
+Projeto 5: Interface Humano-Máquina para braço robótico de reabilitação.
 
 Grupo: Quero Me Formar
 
