@@ -72,30 +72,15 @@ Em seguida, navegou-se pelos arquivos da Toradex em outro terminal e executou-se
 
 <img src="https://user-images.githubusercontent.com/70723135/180579743-4f9d436f-fd68-4498-b3ff-eee5353bc941.png" width="525">
 
-O arquivo .py da interface e do client, então, é executado no host. Basta enviar os dados necessários para estabelecer a comunicação:
+O arquivo .py da interface e do client, então, é executado no host, faltando apenas enviar os dados necessários para estabelecer a comunicação:
 
 <img src="https://user-images.githubusercontent.com/70723135/180579878-b2cfe99f-adc8-4b7c-b42f-2556e1ed39a6.png" width="">
 
-
-Algumas linhas de código responsáveis pela funcionalidade do server são apresentadas a seguir:
-
-```cpp
-    // Criação do socket server
-    sockaddr_in servAddr;
-    bzero((char*)&servAddr, sizeof(servAddr));
-    servAddr.sin_family = AF_INET;
-    servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-    servAddr.sin_port = htons(port);
- 
-    int serverSd = socket(AF_INET, SOCK_STREAM, 0);
-    if(serverSd < 0)
-    {
-       printf("\n Erro em inicializar o socket server. \n");
-        exit(0);
-    }
-
-```
-
-Vale ressaltar que os comandos para execução do client estão presentes no mesmo arquivo .py do Back-End.
-
 ## Resultados
+
+Portanto, com todo esse procedimento realizado, os dados de posição, velocidade e torque dos motores são enviados na seção de Entrada da IHM, sendo mostrados na seção Estado Atual. Abaixo, segue um exemplo dos campos da interface preenchidos e da confirmação do recebimento desses dados no terminal que está navegando na Toradex, respectivamente:
+
+<img src="https://user-images.githubusercontent.com/70723135/180580492-b5848b8e-d888-4ca1-9ef0-28a392446b1d.png" width="">
+
+<img src="https://user-images.githubusercontent.com/70723135/180580526-c891928b-feaf-479b-8b64-25ada602a731.png" width="525">
+
