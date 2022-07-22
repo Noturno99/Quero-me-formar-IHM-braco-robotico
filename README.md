@@ -78,9 +78,9 @@ O arquivo .py da interface e do client, então, é executado no host, faltando a
 
 ## Resultados
 
-Portanto, com todo esse procedimento realizado, os dados de posição, velocidade e torque dos motores são enviados na seção de Entrada da IHM, sendo mostrados na seção Estado Atual. Abaixo, segue um exemplo dos campos da interface preenchidos e da confirmação do recebimento desses dados no terminal que está navegando na Toradex, respectivamente:
+Portanto, com todo esse procedimento realizado, os dados de posição, velocidade e torque dos motores são enviados na seção de Entrada da IHM, sendo mostrados na seção Estado Atual. Segue um exemplo dos campos da interface preenchidos e outro da confirmação da conexão realizada e do recebimento desses dados no terminal que está navegando na Toradex, respectivamente:
 
-<img src="https://user-images.githubusercontent.com/70723135/180580492-b5848b8e-d888-4ca1-9ef0-28a392446b1d.png" width="">
+<img src="https://user-images.githubusercontent.com/70723135/180580492-b5848b8e-d888-4ca1-9ef0-28a392446b1d.png" width="700">
 
 <img src="https://user-images.githubusercontent.com/70723135/180580526-c891928b-feaf-479b-8b64-25ada602a731.png" width="525">
 
