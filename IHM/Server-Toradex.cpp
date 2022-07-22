@@ -25,12 +25,16 @@ int main(int argc, char *argv[])
     int serverSd = socket(AF_INET, SOCK_STREAM, 0);
     if(serverSd < 0)
     {
-       printf("\n Erro em inicializar o socket server. \n");
+        printf("\n Erro em inicializar o socket server. \n");
         exit(0);
     }
 
-    int bindStatus = bind(serverSd, (struct sockaddr*) &servAddr, 
-        sizeof(servAddr));
+    int bindStatus = bind(serverSd, (struct sockaddr*) &servAddr, sizeof(servAddr));
+    if(bindStatus < 0)
+    {
+        printf("\n Erro no building do socket no endereço local. \n");
+        exit(0);
+    }
 
     printf("\n Esperando o client para conectar. \n");
     listen(serverSd, 5);
@@ -39,7 +43,12 @@ int main(int argc, char *argv[])
     socklen_t newSockAddrSize = sizeof(newSockAddr);
 
     int newSd = accept(serverSd, (sockaddr *)&newSockAddr, &newSockAddrSize);
-    
+    if(newSd < 0)
+    {
+        printf("\n Erro no client aceitar o convite. \n" );
+        exit(1);
+    }
+
     printf( "\n Conexão estabelecida com o client! \n");
    
     int bytesLeitura, bytesEscrita = 0;
