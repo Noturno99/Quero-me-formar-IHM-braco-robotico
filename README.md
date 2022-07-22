@@ -67,7 +67,7 @@ Por fim, para estabelecer a comunicação entre o host e a Toradex, utilizou-se 
 Para tanto, inicialmente a Toolchain da Toradex Colibri VF50 foi configurada e o arquivo .cpp do server compilado e enviado para o microcontrolador pelo terminal, conforme as práticas realizadas na disciplina:
 ![image](https://user-images.githubusercontent.com/70723135/180578877-00d2f8aa-ac33-4e4d-a3ca-0de27b20c5a2.png)
 
-![image](https://user-images.githubusercontent.com/70723135/180578925-1a5845a8-7f6d-4378-92c1-01e49e70ebd0.png)
+<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/70723135/180578877-00d2f8aa-ac33-4e4d-a3ca-0de27b20c5a2.png)" width="356" height="109">
 
 
 
