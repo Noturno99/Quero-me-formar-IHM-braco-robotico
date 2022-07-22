@@ -65,7 +65,10 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 Por fim, para estabelecer a comunicação entre o host e a Toradex, utilizou-se protocolo TCP-IP e Sockets nos quais o client foi implementado em Python no computador e o server, em C++ no microcontrolador.
 
 Para tanto, inicialmente a Toolchain da Toradex Colibri VF50 foi configurada e o arquivo .cpp do server compilado e enviado para o microcontrolador pelo terminal, conforme as práticas realizadas na disciplina:
-file:///home/gabriel/Pictures/comunicacao1.png![image](https://user-images.githubusercontent.com/70723135/180578877-00d2f8aa-ac33-4e4d-a3ca-0de27b20c5a2.png)
+![image](https://user-images.githubusercontent.com/70723135/180578877-00d2f8aa-ac33-4e4d-a3ca-0de27b20c5a2.png)
+
+![image](https://user-images.githubusercontent.com/70723135/180578925-1a5845a8-7f6d-4378-92c1-01e49e70ebd0.png)
+
 
 
 Algumas linhas de código responsáveis pela funcionalidade do server são apresentadas a seguir:
