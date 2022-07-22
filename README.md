@@ -72,9 +72,9 @@ Em seguida, navegou-se pelos arquivos da Toradex em outro terminal e executou-se
 
 <img src="https://user-images.githubusercontent.com/70723135/180579743-4f9d436f-fd68-4498-b3ff-eee5353bc941.png" width="525">
 
-O arquivo .py da interface, então, é executado no host e basta enviar os dados necessários para estabelecer a comunicação:
+O arquivo .py da interface e do client, então, é executado no host. Basta enviar os dados necessários para estabelecer a comunicação:
 
-<img src="https://user-images.githubusercontent.com/70723135/180579878-b2cfe99f-adc8-4b7c-b42f-2556e1ed39a6.png" width="525">
+<img src="https://user-images.githubusercontent.com/70723135/180579878-b2cfe99f-adc8-4b7c-b42f-2556e1ed39a6.png" width="">
 
 
 Algumas linhas de código responsáveis pela funcionalidade do server são apresentadas a seguir:
