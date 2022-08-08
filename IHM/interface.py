@@ -1,3 +1,9 @@
+"""
+Created on Thurs. Jul 14 2022
+
+@author: Gabriel Corrêa de Oliveira e Yuri Campagnari Ramos
+"""
+
 from PyQt5 import QtWidgets, uic
 import sys
 import socket  
