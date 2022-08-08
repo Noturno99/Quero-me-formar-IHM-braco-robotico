@@ -67,7 +67,7 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 ```
 
 ### Comunicação do Host com a Toradex
-Por fim, para estabelecer a comunicação entre o host e a Toradex, utilizou-se protocolo TCP-IP e Sockets nos quais o client foi implementado em Python no computador e o server, em C++ no microcontrolador. Em Python, os módulos utilizados foram *socket*
+Por fim, para estabelecer a comunicação entre o host e a Toradex, utilizou-se protocolo TCP-IP e Sockets nos quais o client foi implementado em Python no computador e o server, em C++ no microcontrolador. Em Python, o módulos utilizado foi *socket*, que fornece uma interface para conexões de baixo nível. Fez-se necessário, por outro lado, usar os headers *sys/socket.h*, *netinet/in.h* e *netdb.h* em C++. 
 
 Para tanto, inicialmente a Toolchain da Toradex Colibri VF50 foi configurada e o arquivo .cpp do server compilado e enviado para o microcontrolador pelo terminal, conforme as práticas realizadas na disciplina:
 
