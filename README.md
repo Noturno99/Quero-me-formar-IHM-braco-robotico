@@ -31,31 +31,34 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 
 ```python
         # ---------------- Back-End ----------------- #
-        
+
         # As funções botaoConectarPressionado e botaoEnviarPressionado determinam
         # quais ações serão tomados quando cada botão for apertado.
-        
+
         # Inputs - seção "Conexão"
+        # Nomeia as entradas de conexão com a Toradex 
         self.input1 = self.findChild(QtWidgets.QLineEdit, 'line_IP')
         self.input2 = self.findChild(QtWidgets.QLineEdit, 'line_Entrada')
         self.input3 = self.findChild(QtWidgets.QLineEdit, 'line_Envio')
 
         # Botão Conectar
         self.botao1 = self.findChild(QtWidgets.QPushButton, 'botao_Conectar') 
-        self.botao1.clicked.connect(self.botaoConectarPressionado)
+        self.botao1.clicked.connect(self.botaoConectarPressionado) # Chama a função botaoConectarPressionado assim que o botão Conectar é apertado
         
 
         # Inputs - seção "Entrada"
-        self.input4 = self.findChild(QtWidgets.QLineEdit, 'line_Posicao')
+        # Nomeia as entradas de estado do robô 
+        self.input4 = self.findChild(QtWidgets.QLineEdit, 'line_Posicao') 
         self.input5 = self.findChild(QtWidgets.QLineEdit, 'line_Vel')
         self.input6 = self.findChild(QtWidgets.QLineEdit, 'line_Torque')
 
         # Botão Enviar
         self.botao2 = self.findChild(QtWidgets.QPushButton, 'botao_Enviar')
-        self.botao2.clicked.connect(self.botaoEnviarPressionado)
+        self.botao2.clicked.connect(self.botaoEnviarPressionado) # Chama a função botaoEnviarPressionado assim que o botão Enviar é apertado
 
 
         # Outputs - seção "Estado Atual"
+        # Nomeia as saídas de Estado Atual 
         self.output1 = self.findChild(QtWidgets.QLabel, 'label_Posicao')
         self.output2 = self.findChild(QtWidgets.QLabel, 'label_Vel')
         self.output3 = self.findChild(QtWidgets.QLabel, 'label_Torque')
