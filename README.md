@@ -32,8 +32,7 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 ```python
         # ---------------- Back-End ----------------- #
 
-        # As funções botaoConectarPressionado e botaoEnviarPressionado determinam
-        # quais ações serão tomados quando cada botão for apertado.
+        # As funções botaoConectarPressionado e botaoEnviarPressionado determinam quais ações serão tomados quando cada botão for apertado.
 
         # Inputs - seção "Conexão"
         # Nomeia as entradas de conexão com a Toradex 
