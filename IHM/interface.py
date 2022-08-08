@@ -1,8 +1,6 @@
 from PyQt5 import QtWidgets, uic
 import sys
 import socket  
-from asyncio import open_connection
-from codecs import charmap_build
 
 # Instância de Socket
 sc = socket.socket()  
