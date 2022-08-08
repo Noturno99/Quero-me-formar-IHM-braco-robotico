@@ -1,3 +1,9 @@
+/*
+Created on Thurs. Jul 14 2022
+
+@author: Pedro Antonio Calorio Gutierres
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
