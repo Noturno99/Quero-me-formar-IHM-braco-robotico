@@ -32,7 +32,8 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 ```python
         # ---------------- Back-End ----------------- #
 
-        # As funções botaoConectarPressionado e botaoEnviarPressionado determinam quais ações serão tomados quando cada botão for apertado.
+        # As funções botaoConectarPressionado e botaoEnviarPressionado determinam
+        # quais ações serão tomados quando cada botão for apertado.
 
         # Inputs - seção "Conexão"
         # Nomeia as entradas de conexão com a Toradex 
@@ -42,7 +43,8 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 
         # Botão Conectar
         self.botao1 = self.findChild(QtWidgets.QPushButton, 'botao_Conectar') 
-        self.botao1.clicked.connect(self.botaoConectarPressionado) # Chama a função botaoConectarPressionado assim que o botão Conectar é apertado
+        self.botao1.clicked.connect(self.botaoConectarPressionado) # Chama a função botaoConectarPressionado
+                                                                   # assim que o botão Conectar é apertado
         
 
         # Inputs - seção "Entrada"
@@ -53,7 +55,8 @@ Para elaboração da lógica de Back-End, também foi utilizado o framework Qt, 
 
         # Botão Enviar
         self.botao2 = self.findChild(QtWidgets.QPushButton, 'botao_Enviar')
-        self.botao2.clicked.connect(self.botaoEnviarPressionado) # Chama a função botaoEnviarPressionado assim que o botão Enviar é apertado
+        self.botao2.clicked.connect(self.botaoEnviarPressionado) # Chama a função botaoEnviarPressionado
+                                                                 # assim que o botão Enviar é apertado
 
 
         # Outputs - seção "Estado Atual"
